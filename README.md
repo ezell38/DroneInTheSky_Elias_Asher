@@ -29,7 +29,7 @@
  
 ### Images 
 
-
+<img src="images/Drone Planning Outline.png.jpg" width="300" height="400" /> 
 
 ### Primary goal then following iterations 
 
