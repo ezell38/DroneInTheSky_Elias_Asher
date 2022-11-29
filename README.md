@@ -39,9 +39,9 @@ Use a Pico to track a drone and display its path on a phone screen. Have a IR re
 
 Iterations - 
 
- 1 - Adding a button onto the IR remote that when pressed prompts the drone to fly in a square and map it out
+ - Adding a button onto the IR remote that when pressed prompts the drone to fly in a square and map it out
  
- 2 - Adding a button onto the IR remote that when pressed prompts the drone to fly in a circle and map it out
+ - Adding a button onto the IR remote that when pressed prompts the drone to fly in a circle and map it out
 
 ### What we need to learn
 
