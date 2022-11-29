@@ -31,6 +31,8 @@
 
 <img src="images/Drone_Planning_Outline.png" width="600" height="400" /> 
 
+
+
 ### Primary goal then following iterations 
 
 
