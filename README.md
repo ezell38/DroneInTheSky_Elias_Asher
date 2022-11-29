@@ -31,7 +31,7 @@
 
 <img src="images/Drone_Planning_Outline.png" width="600" height="450" /> 
 
-<img src="images/PlanningImage_2.jpg" width="600" height="450" /> 
+<img src="images/PlanningImage_2.JPG" width="600" height="450" /> 
 
 ### Primary goal then following iterations 
 
