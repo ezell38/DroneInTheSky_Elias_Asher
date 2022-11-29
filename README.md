@@ -26,6 +26,10 @@
  - Laser cut fastening pieces
  
  - IR Remote 
+
+ - Battery
+ 
+ - Battery Holder
  
 ### Images 
 
@@ -42,6 +46,8 @@ Iterations -
  - Adding a button onto the IR remote that when pressed prompts the drone to fly in a square and map it out
  
  - Adding a button onto the IR remote that when pressed prompts the drone to fly in a circle and map it out
+ 
+ - Adding a button onto the IR remote that when pressed prompts the drone to fly in a star and map it out
 
 ### What we need to learn
 
