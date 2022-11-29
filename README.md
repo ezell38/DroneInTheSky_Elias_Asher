@@ -45,6 +45,10 @@ Iterations -
 
 ### What we need to learn
 
+ - How to add bluetooth to a pico
+ 
+ - How to track distance using a pico 
+
 
 ### Schedule
 
