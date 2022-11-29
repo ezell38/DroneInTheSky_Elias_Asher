@@ -29,7 +29,7 @@
  
 ### Images 
 
-<img src="images/Drone_Planning_Outline.png" width="400" height="300" /> <img src="images/PlanningImage_2.JPG" width="400" height="300" /> 
+<img src="images/Drone_Planning_Outline.png" width="550" height="400" /> <img src="images/PlanningImage_2.JPG" width="550" height="400" /> 
 
 ### Primary goal then following iterations 
 
