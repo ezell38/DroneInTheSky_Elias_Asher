@@ -58,4 +58,11 @@ Iterations -
 
 ### Schedule
 
+Weeks 1 and 2: We will complete the planning document besides code and cad sketches, schedule, and get permission.
+Week 3: We will complete pseudocode and CAD sketches of each part, and purchase/collect supplies.
+Weeks 4 and 5: We will start drafting the real code and CAD for printing, as well as wiring.
+Week 6: Complete process of connecting Pico to phone application and figure out display method.
+Week 7: Combine all components into full project for testing.
+Week 8: First Prototype test of flight, just tracking location and mapping.
+Week 9 and 10: Fix issues with code/flight
 
