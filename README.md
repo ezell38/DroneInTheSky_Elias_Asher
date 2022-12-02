@@ -55,6 +55,8 @@ Iterations -
  
  - How to track distance using a pico 
 
+ - How to map out a path on the screen from data
+ 
 
 ### Schedule
 
