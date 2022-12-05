@@ -15,6 +15,8 @@
  
  - Rasberry Pi
  
+ - L76B GNSS Module
+ 
  - Breadboard
  
  - Wires 
@@ -23,7 +25,7 @@
 
  - Box to hold onboard pico
  
- - Laser cut fastening pieces
+ - Laser cut/3D printed fastening pieces
  
  - IR Remote 
 
@@ -39,15 +41,11 @@
 
 Primary Goal - 
 
-Use a Pico to track a drone and display its path on a phone screen. Have a IR remote attached to the drone remote that controls when the PICO is drawing on the phone screen and when it isn't.  
+Use GPS with the L76B and a Pico to track a drone and display its path on a live map. This project has no projectile risk involved. 
 
 Iterations - 
 
- - Adding a button onto the IR remote that when pressed prompts the drone to fly in a square and map it out
- 
- - Adding a button onto the IR remote that when pressed prompts the drone to fly in a circle and map it out
- 
- - Adding a button onto the IR remote that when pressed prompts the drone to fly in a star and map it out
+ - Adding the button to turn the tracker on and off. Have a IR remote attached to the drone remote that controls when the PICO is drawing on the phone screen and when it isn't
 
 ### What we need to learn
 
@@ -71,3 +69,13 @@ Week 11: Retest with new changes. </br>
 Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
 
+### PseudoCode
+
+Initialize L76B module
+Connect Google maps to PC
+Connect to L76B to Pico
+Track Projectile while being flown
+Data is converted to positioning on map
+Automate Drawing Lines between data points
+Send images to mobile device
+Print data 
