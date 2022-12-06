@@ -15,7 +15,7 @@
  
  - Rasberry Pi
  
- - Ultimate GPS - https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage 
+ - [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) 
  
  - Breadboard
  
