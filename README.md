@@ -71,11 +71,18 @@ Week 13 and 14: Finalize documentation and design.
 
 ### PseudoCode
 
-Initialize L76B module
-Connect Google maps to PC
-Connect to L76B to Pico
-Track Projectile while being flown
-Data is converted to positioning on map
-Automate Drawing Lines between data points
-Send images to mobile device
-Print data 
+ - Initialize L76B module
+
+ - Connect Google maps to PC
+
+ - Connect to L76B to Pico
+
+ - Track Projectile while being flown
+
+ - Data is converted to positioning on map
+
+ - Automate Drawing Lines between data points
+
+ - Send images to mobile device
+
+ - Print data 
