@@ -35,7 +35,7 @@
  
 ### Images 
 
-<img src="images/Drone_Planning_Outline.png" width="400" height="300" /> <img src="images/PlanningImage_2.JPG" width="400" height="300" /> 
+<img src="images/DITS_Drawing_1.PNG" width="400" height="300" /> <img src="images/PlanningImage_2.JPG" width="400" height="300" /> 
 
 ### Primary goal then following iterations 
 
