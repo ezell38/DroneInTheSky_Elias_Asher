@@ -15,7 +15,7 @@
  
  - Rasberry Pi
  
- - L76B GNSS Module
+ - Ultimate GPS - https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage 
  
  - Breadboard
  
@@ -71,11 +71,11 @@ Week 13 and 14: Finalize documentation and design.
 
 ### PseudoCode
 
- - Initialize L76B module
+ - Initialize Ultimate GPS module
 
  - Connect Google maps to PC
 
- - Connect to L76B to Pico
+ - Connect to Ultimate GPS to Pico
 
  - Track Projectile while being flown
 
