@@ -45,6 +45,8 @@ Use GPS with the L76B and a Pico to track a drone and display its path on a live
 
 Iterations - 
 
+ - Make a drone
+
  - Adding the button to turn the tracker on and off. Have a IR remote attached to the drone remote that controls when the PICO is drawing on the phone screen and when it isn't
 
 ### What we need to learn
