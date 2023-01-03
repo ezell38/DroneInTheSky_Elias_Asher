@@ -33,6 +33,8 @@
  
  - Battery Holder
  
+ - LORA
+ 
 ### Images 
 
 <img src="images/DITS_Drawing_1.PNG" width="400" height="300" /> <img src="images/PlanningImage_2.JPG" width="400" height="300" /> 
@@ -43,6 +45,8 @@ Primary Goal -
 
 Use GPS with the L76B and a Pico to track a drone and display its path on a live map. 
 Iterations - 
+
+ - Make it send data in real time
 
  - Make a drone
 
@@ -57,6 +61,10 @@ Risk Mitigation -
  - Propeller blades can cause harm 
  
  - Muscular injury from walking to get drone or other projectile
+
+Avoidance - 
+
+We will wear safety glasses while flying the drone and doing other various tasks that could endanger our eyes. Properly warm-up before retrieving drone/projectile. 
 
 ### What we need to learn
 
