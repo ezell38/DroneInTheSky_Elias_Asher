@@ -41,13 +41,22 @@
 
 Primary Goal - 
 
-Use GPS with the L76B and a Pico to track a drone and display its path on a live map. This project has no projectile risk involved. 
-
+Use GPS with the L76B and a Pico to track a drone and display its path on a live map. 
 Iterations - 
 
  - Make a drone
 
  - Adding the button to turn the tracker on and off. Have a IR remote attached to the drone remote that controls when the PICO is drawing on the phone screen and when it isn't
+
+Risk Mitigation - 
+
+ - Hit someone with projectile/drone
+ 
+ - Lose the GPS tracker if it doesn't work
+  
+ - Propeller blades can cause harm 
+ 
+ - Muscular injury from walking to get drone or other projectile
 
 ### What we need to learn
 
