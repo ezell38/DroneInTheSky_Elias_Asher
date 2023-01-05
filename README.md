@@ -13,7 +13,7 @@
 
  - Cheerwing Drone - CW4
  
- - Rasberry Pi - 8.9 grams
+ - Rasberry Pi - 6 grams
  
  - [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) - 8.5 grams
  
@@ -29,9 +29,7 @@
  
  - IR Remote 
 
- - Battery
- 
- - Battery Holder
+ - LiPo battery + Powerboost 500c Module - 14 grams
  
  - [LORA](https://www.adafruit.com/product/3072)
  
