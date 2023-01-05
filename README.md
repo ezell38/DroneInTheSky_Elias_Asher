@@ -33,7 +33,7 @@
  
  - Battery Holder
  
- - LORA
+ - [LORA](https://www.adafruit.com/product/3072)
  
 ### Images 
 
