@@ -17,7 +17,7 @@
  
  - [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) - 8.5 grams
  
- - Breadboard - 10 grams
+ - Circuitboard - 10 grams
  
  - Wires 
  
