@@ -13,11 +13,11 @@
 
  - Cheerwing Drone - CW4
  
- - Rasberry Pi
+ - Rasberry Pi - 8.9 grams
  
- - [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) 
+ - [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) - 8.5 grams
  
- - Breadboard
+ - Breadboard - 10 grams
  
  - Wires 
  
