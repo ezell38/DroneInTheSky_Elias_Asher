@@ -114,8 +114,13 @@ During these weeks we completed the planning document and slowly finalized/revis
 
 For this assignment we needed to attach the GPS tracker onto a tello drone so we are able to attach it. We used a previous CAD design that was meant to hold an egg over a tello and then remodeled it to hold the circuitboard, Rasberry Pi PICO, battery, and Adafruit Ultimate GPS. A major blcok in this project was keeping the total mass of the required modules as well as the printed CAD attachment under the tello weight restriction of 60 grams. We ended up acheiving this by cutting slits in the CAD design to cut down the weight. 
 
+<img src="images/Project_1.PNG" width="400" height="300" />
+
+<img src="images/Project_2.PNG" width="400" height="300" /> 
+
+<img src="images/Project_3.PNG" width="400" height="300" /> 
 
 
-[Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/5392185db1c275d61a384980)
+[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/5392185db1c275d61a384980)
 
 
