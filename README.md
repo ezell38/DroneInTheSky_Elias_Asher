@@ -86,6 +86,10 @@ Week 11: Retest with new changes. </br>
 Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
 
+## Weeks 1-4 - 
+
+During these weeks we completed the planning document and slowly finalized/revised our project until we decided on what our first, reasonable iteration would be. We then completed the PseudoCode and CAD design for the project.
+
 ### PseudoCode
 
  - Initialize Ultimate GPS module
@@ -103,3 +107,13 @@ Week 13 and 14: Finalize documentation and design.
  - Send images to mobile device
 
  - Print data 
+
+### CAD 
+
+For this assignment we needed to attach the GPS tracker onto a tello drone so we are able to attach it. We used a previous CAD design that was meant to hold an egg over a tello and then remodeled it to hold the circuitboard, Rasberry Pi PICO, battery, and Adafruit Ultimate GPS. A major blcok in this project was keeping the total mass of the required modules as well as the printed CAD attachment under the tello weight restriction of 60 grams. We ended up acheiving this by cutting slits in the CAD design to cut down the weight. 
+
+
+
+[Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/5392185db1c275d61a384980)
+
+
