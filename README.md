@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [Planning](#Planning)
+* [Week 1-4](#Weeks 1-4)
 
 
 
@@ -85,6 +86,7 @@ Week 9 and 10: Fix issues with code/flight. </br>
 Week 11: Retest with new changes. </br>
 Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
+
 
 ## Weeks 1-4 - 
 
