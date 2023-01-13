@@ -88,7 +88,7 @@ Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
 
 
-## Weeks 1-4 - 
+## Weeks 1-4
 
 During these weeks we completed the planning document and slowly finalized/revised our project until we decided on what our first, reasonable iteration would be. We then completed the PseudoCode and CAD design for the project.
 
