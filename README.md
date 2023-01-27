@@ -32,7 +32,7 @@
 
  - LiPo battery + Powerboost 500c Module - 14 grams
  
- - [LORA](https://www.adafruit.com/product/3072)
+ - [LORA](https://www.adafruit.com/product/3072) - 3.1 grams
  
 ### Images 
 
