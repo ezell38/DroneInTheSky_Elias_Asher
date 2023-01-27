@@ -1,20 +1,26 @@
-from adafruit_ugpio import UGPDevice #import the ultimate gps module
+import time
 import board
-import time 
- 
-PPS_PIN = board.D1 # assign pin D1 on Raspberry Pi Pico as the Pulse Per Second (PPS) Pin for GPS Module 
-gps = UGPDevice(PPS_PIN) #create an instance of UGPDevice using control from PPS pin 1. 
- 
-# continue only if a GPS device was found on the port specified above 
-if gps.has_fix:
+import busio 
+import adafruit_gps
 
-    # read longitude and latitude from GPS module into variables below  
-    lat = gps.latitude 
-    lon = gps.longitude
+# create the I2C interface connection to the GPS module 
+UART = busio.UART(board.TX, board.RX, baudrate=9600) 
+gps = adafruit_gps.GPS(UART)  # Use UART for connection 
+# Initialize GPS module by setting update rate to once a second  
+gps.send_command(b"PMTK220,1000")   # Set update rate to once a second (1Hz) 
+# Establish connection to Raspberry Pi Pico   
+data_file = open("GPSdata.txt", "w")   # Open file in write mode (overwrites existing data)  
 
-    # save current location to file for tracking or reference later  
-    with open("locationlog.csv", "a") as log:  
+ while True:  # Main loop - keep going forever   
 
-        log.write("{}, {}\n".format(lon, lat))
+     gps.update()                    # Update GPS module readings  
 
-        print("Location added to log.")
+     if gps.has_fix:     # Verify that there are signal datas            
+
+         lat, lon = gps.latitude, gps.longitude    # Save lat and long data     
+
+         data_file.write("{0},{1}\n".format(lat, lon))    # Append new data as lat and long into text file      
+
+     time.sleep(1)                   # Pause for 1 second between each loop iteration 
+
+ data_file.close()                  # When main loop completes, close the text file
