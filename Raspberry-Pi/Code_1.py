@@ -1,7 +1,7 @@
 import time
 import board
 import busio 
-import adafruit_gps
+import adafruit_gps.mpy
 
 # create the I2C interface connection to the GPS module 
 UART = busio.UART(board.TX, board.RX, baudrate=9600) 
