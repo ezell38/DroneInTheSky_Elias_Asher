@@ -12,7 +12,9 @@
 
 ### Materials 
 
- - Cheerwing Drone - CW4
+ - Tello Quadcopter Drone
+ 
+ - Tello Battery
  
  - Rasberry Pi - 6 grams
  
@@ -21,18 +23,16 @@
  - Circuitboard - 10 grams
  
  - Wires 
- 
- - Accelerometer 
 
- - Box to hold onboard pico
+ - Attachment device to hold onboard pico
  
  - Laser cut/3D printed fastening pieces
- 
- - IR Remote 
 
  - LiPo battery + Powerboost 500c Module - 14 grams
  
  - [LORA](https://www.adafruit.com/product/3072) - 3.1 grams
+  
+ - Accelerometer 
  
 ### Images 
 
@@ -42,7 +42,7 @@
 
 Primary Goal - 
 
-Use GPS with the L76B and a Pico to track a drone and display its path on a live map. 
+Use GPS with the Ultimate GPS tracker and a Pico to track a drone and display its path on a live map. 
 Iterations - 
 
  - Make it send data in real time
