@@ -5,7 +5,7 @@
 ## Table of Contents
 * [Planning](#Planning)
 * [Week 1-4](#Weeks_1-4)
-
+* [Week 4-10](#Weeks_4-10)
 
 
 ## Planning
@@ -141,6 +141,8 @@ Week 9(3/3): Combine all components into full project for testing. </br>
 Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
 
 ### Finalized CAD 
+
+
 
 [CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
  
