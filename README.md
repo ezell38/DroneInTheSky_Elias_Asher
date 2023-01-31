@@ -126,3 +126,26 @@ For this assignment we needed to attach the GPS tracker onto a tello drone so we
 ### Code 
 
 [Initial Code](Raspberry-Pi/Code_1.py)
+
+
+## Weeks_4-10 
+
+### Schedule
+
+Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding. </br>  
+Week 5(2/6): Coding. </br>
+Week 6(2/13): Coding. </br>
+Week 7(2/20): Test finalized code with bread board. </br>
+Week 8(2/27): Sodder the board with finalized components and assemble with attachment. </br> 
+Week 9(3/3): Combine all components into full project for testing. </br>
+Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
+
+### Finalized CAD 
+
+[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
+ 
+
+
+
+
+
