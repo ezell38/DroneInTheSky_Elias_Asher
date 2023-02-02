@@ -142,6 +142,15 @@ Week 10(3/10): First Prototype test of flight with all components. Logging locat
 
 ### Finalized CAD 
 
+One major change we made in our CAD design was adding slits in the battery holder to save weight and also editing the dimensions for a more snug fit. We also added a nut shaped extrude in the bottom of the attachment to hold the nut alling the bolt to screw in because the bolt was not long enough to reach all the way through. 
+
+<img src="images/Project_4.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_5.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_6.PNG" width="400" height="300" /> 
 
 
 [CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
