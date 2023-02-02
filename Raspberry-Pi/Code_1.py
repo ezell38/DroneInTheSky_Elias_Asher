@@ -1,7 +1,7 @@
 import time
 import board
 import busio 
-import adafruit_gps
+import adafruit_gps.mpy
 
 # create the I2C interface connection to the GPS module 
 UART = busio.UART(board.TX, board.RX, baudrate=9600) 
@@ -23,4 +23,8 @@ while True:  # Main loop - keep going forever
 
     time.sleep(1)                   # Pause for 1 second between each loop iteration 
 
+<<<<<<< HEAD
 data_file.close()                  # When main loop completes, close the text file
+=======
+ data_file.close()                  # When main loop completes, close the text file
+

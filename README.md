@@ -5,14 +5,16 @@
 ## Table of Contents
 * [Planning](#Planning)
 * [Week 1-4](#Weeks_1-4)
-
+* [Week 4-10](#Weeks_4-10)
 
 
 ## Planning
 
 ### Materials 
 
- - Cheerwing Drone - CW4
+ - Tello Quadcopter Drone
+ 
+ - Tello Battery
  
  - Rasberry Pi - 6 grams
  
@@ -21,18 +23,16 @@
  - Circuitboard - 10 grams
  
  - Wires 
- 
- - Accelerometer 
 
- - Box to hold onboard pico
+ - Attachment device to hold onboard pico
  
  - Laser cut/3D printed fastening pieces
- 
- - IR Remote 
 
  - LiPo battery + Powerboost 500c Module - 14 grams
  
  - [LORA](https://www.adafruit.com/product/3072) - 3.1 grams
+  
+ - Accelerometer 
  
 ### Images 
 
@@ -42,7 +42,7 @@
 
 Primary Goal - 
 
-Use GPS with the L76B and a Pico to track a drone and display its path on a live map. 
+Use GPS with the Ultimate GPS tracker and a Pico to track a drone and display its path on a live map. 
 Iterations - 
 
  - Make it send data in real time
@@ -126,3 +126,37 @@ For this assignment we needed to attach the GPS tracker onto a tello drone so we
 ### Code 
 
 [Initial Code](Raspberry-Pi/Code_1.py)
+
+
+## Weeks_4-10 
+
+### Schedule
+
+Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding. </br>  
+Week 5(2/6): Coding. </br>
+Week 6(2/13): Coding. </br>
+Week 7(2/20): Test finalized code with bread board. </br>
+Week 8(2/27): Sodder the board with finalized components and assemble with attachment. </br> 
+Week 9(3/3): Combine all components into full project for testing. </br>
+Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
+
+### Finalized CAD 
+
+One major change we made in our CAD design was adding slits in the battery holder to save weight and also editing the dimensions for a more snug fit. We also added a nut shaped extrude in the bottom of the attachment to hold the nut alling the bolt to screw in because the bolt was not long enough to reach all the way through. 
+
+<img src="images/Project_4.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_5.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_6.PNG" width="400" height="300" /> 
+
+
+[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
+ 
+
+
+
+
+
