@@ -11,16 +11,16 @@ gps.send_command(b"PMTK220,1000")   # Set update rate to once a second (1Hz)
 # Establish connection to Raspberry Pi Pico   
 data_file = open("GPSdata.txt", "w")   # Open file in write mode (overwrites existing data)  
 
- while True:  # Main loop - keep going forever   
+while True:  # Main loop - keep going forever   
 
-     gps.update()                    # Update GPS module readings  
+    gps.update()                    # Update GPS module readings  
 
-     if gps.has_fix:     # Verify that there are signal datas            
+    if gps.has_fix:     # Verify that there are signal datas            
 
-         lat, lon = gps.latitude, gps.longitude    # Save lat and long data     
+        lat, lon = gps.latitude, gps.longitude    # Save lat and long data     
 
-         data_file.write("{0},{1}\n".format(lat, lon))    # Append new data as lat and long into text file      
+        data_file.write("{0},{1}\n".format(lat, lon))    # Append new data as lat and long into text file      
 
-     time.sleep(1)                   # Pause for 1 second between each loop iteration 
+    time.sleep(1)                   # Pause for 1 second between each loop iteration 
 
- data_file.close()                  # When main loop completes, close the text file
+data_file.close()                  # When main loop completes, close the text file
