@@ -1,30 +1,42 @@
 import time
 import board
-import busio 
-import adafruit_gps.mpy
+import busio
+import digitalio
+import adafruit_gps
 
-# create the I2C interface connection to the GPS module 
-UART = busio.UART(board.TX, board.RX, baudrate=9600) 
-gps = adafruit_gps.GPS(UART)  # Use UART for connection 
-# Initialize GPS module by setting update rate to once a second  
-gps.send_command(b"PMTK220,1000")   # Set update rate to once a second (1Hz) 
-# Establish connection to Raspberry Pi Pico   
-data_file = open("GPSdata.txt", "w")   # Open file in write mode (overwrites existing data)  
 
-while True:  # Main loop - keep going forever   
 
-    gps.update()                    # Update GPS module readings  
+led = digitalio.DigitalInOut(board.LED)     # sets up LED in these 2 lines
+led.direction=digitalio.Direction.OUTPUT 
 
-    if gps.has_fix:     # Verify that there are signal datas            
+uart = busio.UART(board.GP4, board.GP5, baudrate=9600, timeout=10)
 
-        lat, lon = gps.latitude, gps.longitude    # Save lat and long data     
+gps = adafruit_gps.GPS(uart, debug=False) 
 
-        data_file.write("{0},{1}\n".format(lat, lon))    # Append new data as lat and long into text file      
+gps.latitude=lat
+gps.longitude=lon
 
-    time.sleep(1)                   # Pause for 1 second between each loop iteration 
+while.True:
+    gps.update()
+    # Every second print out current location details if there's a fix.
+    current = time.monotonic()
+       if current - last_print >= 1.0:
+        last_print = current
 
-<<<<<<< HEAD
-data_file.close()                  # When main loop completes, close the text file
-=======
- data_file.close()                  # When main loop completes, close the text file
+    if not gps.has_fix:
+            # Try again if we don't have a fix yet.
+            print("Waiting for fix...")
+            led.value = False
+            continue
 
+
+
+
+    with open("/gps.txt", "a") as fp:
+        while True:
+            temp = microcontroller.cpu.temperature
+            # do the C-to-F conversion here if you would like
+            fp.write(f'{lat}, {lon}\n'.format(gps.latitude))
+            fp.flush()
+            led.value = not led.value
+            time.sleep(1)
