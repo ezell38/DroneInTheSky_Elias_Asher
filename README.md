@@ -159,7 +159,15 @@ One major change we made in our CAD design was adding slits in the battery holde
 
 #### GPS tracker
 To start the code off, we used the basic starter code on the GPS module website, linked [here.](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage)
+
+Here are some important lines:
+
+```python
+import adafruit_gps
+uart = busio.UART(board.GP4, board.GP5, baudrate=9600, timeout=10)
+gps = adafruit_gps.GPS(uart, debug=False) 
  
+```
 After we copy and pasted this starter code, we began to dissect it and remove the portions we didn't need. The main two items necessary for our project are latitude and longitude, so we kept those and removed the rest.
 
 #### Data storage
