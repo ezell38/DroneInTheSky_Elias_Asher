@@ -184,5 +184,6 @@ if not switch.value:
 ### Wiring 
 
 <img src="images/Project8.jpg" width="300" height="300" /> <img src="images/Project9.JPG" width="300" height="300" /> 
+
 <img src="images/Project10.jpg" width="300" height="300" /> <img src="images/Project11.JPG" width="300" height="300" /> 
 
