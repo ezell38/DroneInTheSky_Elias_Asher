@@ -1,16 +1,19 @@
+import board
+import digitalio
 import storage
 
-storage.remount("/", False)
+switch = digitalio.DigitalInOut(board.GP15)
+switch.direction = digitalio.Direction.INPUT
+switch.pull = digitalio.Pull.UP
 
-# type this in to create test file
+if not switch.value:
+    storage.remount("/", readonly=False)
+
 
 # with open("/tmp.txt", "a") as fp:
-# fp.write("hello, world!")
+# fp.write(switch.value)
 
-# import os
-# os.listdir("/")
-# os.rename("/boot.py", "/boot.bak")
-
-
-# https://learn.adafruit.com/cpu-temperature-logging-with-circuit-python/writing-to-the-filesystem
-# https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-datalogging
+#if stuck!!!!! use this below in the terminal:
+    # import os
+    # os.listdir("/")
+    # os.rename("/boot.py", "/boot.bak")
