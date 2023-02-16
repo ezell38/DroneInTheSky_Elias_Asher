@@ -10,7 +10,6 @@ led = digitalio.DigitalInOut(board.LED)     # sets up LED in these 2 lines
 led.direction=digitalio.Direction.OUTPUT 
 
 uart = busio.UART(board.GP4, board.GP5, baudrate=9600, timeout=10)
-
 gps = adafruit_gps.GPS(uart, debug=False) 
 
 gps.latitude=lat
@@ -34,9 +33,11 @@ while True:
 
     with open("/gps.txt", "a") as fp:
         while True:
+            temp = microcontroller.cpu.temperature
             # do the C-to-F conversion here if you would like
             fp.write(f'{lat}, {lon}\n'.format(gps.latitude))
             fp.flush()
-            led.value = not led.value
+
+            led.value = True
             time.sleep(1)
 

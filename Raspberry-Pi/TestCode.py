@@ -19,7 +19,12 @@ for i in range(5, 0, -1):      # for loop to print numbers 10 through 0
     time.sleep(.5)
     led.value = False
     time.sleep(.5)
+<<<<<<< HEAD
 led.value = True    #leaves LED on after the loop ends
+=======
+print("Liftoff!") # yes
+led.value = True    #leaves LED on after the loop end
+>>>>>>> c2145f90b9abdbf988720f103c34e204964dee63
 
 
 # Create a serial connection for the GPS connection using default speed and
