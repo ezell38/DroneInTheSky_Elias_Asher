@@ -181,3 +181,13 @@ if not switch.value:
     storage.remount("/", readonly=False)
 ```
 
+### Wiring 
+
+<img src="images/Project8.JPG" width="400" height="300" /> 
+
+<img src="images/Project9.JPG" width="400" height="300" /> 
+
+<img src="images/Project10.JPG" width="400" height="300" /> 
+
+<img src="images/Project11.JPG" width="400" height="300" /> 
+
