@@ -16,25 +16,24 @@ gps = adafruit_gps.GPS(uart, debug=False)
 gps.latitude=lat
 gps.longitude=lon
 
-while.True:
+while True:
     gps.update()
     # Every second print out current location details if there's a fix.
     current = time.monotonic()
-       if current - last_print >= 1.0:
+    if current - last_print >= 0.5:
         last_print = current
 
     if not gps.has_fix:
-            # Try again if we don't have a fix yet.
-            print("Waiting for fix...")
-            led.value = False
-            continue
+        # Try again if we don't have a fix yet.
+        print("Waiting for fix...")
+        led.value = False
+        continue
 
 
 
 
     with open("/gps.txt", "a") as fp:
         while True:
-            temp = microcontroller.cpu.temperature
             # do the C-to-F conversion here if you would like
             fp.write(f'{lat}, {lon}\n'.format(gps.latitude))
             fp.flush()

@@ -19,7 +19,6 @@ for i in range(5, 0, -1):      # for loop to print numbers 10 through 0
     time.sleep(.5)
     led.value = False
     time.sleep(.5)
-print("Liftoff!")
 led.value = True    #leaves LED on after the loop ends
 
 
@@ -75,7 +74,7 @@ while True:
     gps.update()
     # Every second print out current location details if there's a fix.
     current = time.monotonic()
-    if current - last_print >= 1.0:
+       if current - last_print >= 1.0:
         last_print = current
         if not gps.has_fix:
             # Try again if we don't have a fix yet.
@@ -84,7 +83,11 @@ while True:
             continue
         # We have a fix! (gps.has_fix is true)
         # Print out details about the fix like location, date, etc.
-        led.value = True
+        for i in range(5, 0, -1):      # for loop to print numbers 10 through 0
+            led.value = True
+            time.sleep(.5)
+            led.value = False
+            time.sleep(.5) 
         print("=" * 40)  # Print a separator line.
         print(
             "Fix timestamp: {}/{}/{} {:02}:{:02}:{:02}".format(
@@ -123,3 +126,6 @@ while True:
             print("Horizontal dilution: {}".format(gps.horizontal_dilution))
         if gps.height_geoid is not None:
             print("Height geoid: {} meters".format(gps.height_geoid))
+        
+
+       
