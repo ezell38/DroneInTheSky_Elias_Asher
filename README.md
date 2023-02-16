@@ -136,7 +136,7 @@ Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding.
 Week 5(2/6): Coding. </br>
 Week 6(2/13): Coding. </br>
 Week 7(2/20): Test finalized code with bread board. </br>
-Week 8(2/27): Sodder the board with finalized components and assemble with attachment. </br> 
+Week 8(2/27): Solder the board with finalized components and assemble with attachment. </br> 
 Week 9(3/3): Combine all components into full project for testing. </br>
 Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
 
@@ -154,9 +154,30 @@ One major change we made in our CAD design was adding slits in the battery holde
 
 
 [CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
+
+### Code explained
+
+#### GPS tracker
+To start the code off, we used the basic starter code on the GPS module website, linked [here.](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage)
  
+After we copy and pasted this starter code, we began to dissect it and remove the portions we didn't need. The main two items necessary for our project are latitude and longitude, so we kept those and removed the rest.
 
+#### Data storage
+Next, we needed to figure out how to write data onto our pico, so that the drone could store the longitude and latitude values. The Raspberry Pi Pico can either read data or write data, and in write-only mode, the user is unable to edit any files on the pico. This turned out to be extremely annoying, as each time a problem occured in our code, we had to reboot the device into read-only mode, fix the problem, then reboot again into write-only.
+Instructions can be found [here.](https://learn.adafruit.com/cpu-temperature-logging-with-circuit-python/writing-to-the-filesystem) 
 
+It took a while to figure out how to switch back and forth efficiently, but we managed to create a boot file that checks whether a wire is grounded. If it is, then the pico boots into write mode; if not, then it goes into read only mode.
 
+```python
+import board
+import digitalio
+import storage
 
+switch = digitalio.DigitalInOut(board.GP15)
+switch.direction = digitalio.Direction.INPUT
+switch.pull = digitalio.Pull.UP
+
+if not switch.value:
+    storage.remount("/", readonly=False)
+```
 
