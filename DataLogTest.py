@@ -8,7 +8,7 @@ import time
 
 [x1, y1] = input("Enter coordinate 1: ").split(",")                 #takes an input of 2 variables using the split method
 [x2, y2] = input("Enter coordinate 2: ").split(",")
-[x3, y3] = input("Enter coordinate 2: ").split(",")
+[x3, y3] = input("Enter coordinate 3: ").split(",")
 
 data = [[x1, y1], [x2, y2], [x3, y3]]
 
