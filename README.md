@@ -201,7 +201,8 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
     for i in range(len(data)):                                      # Loops through the data
         fp.write(f'{data[i][0]}, {data[i][1]}\n')                   # and writes each data point onto the file
         fp.flush()
-        led.value = not led.value                                   # Turns the onboard led to the opposite state to test delay time of each write
+        led.value = not led.value                                   # Turns the onboard led to the opposite state 
+                                                                    # to test delay time of each write
 ```
 ### Wiring 
 
