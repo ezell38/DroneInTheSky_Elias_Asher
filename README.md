@@ -188,7 +188,21 @@ switch.pull = digitalio.Pull.UP
 if not switch.value:
     storage.remount("/", readonly=False)
 ```
+After we were done setting up the switch wire, we were set to test the actual data collection. As a simple proof of concept, we created the following test file to see if the pico's data storage worked correctly. This file could also be used as a tool to mess with the formatting of the data before it's written, so that we didn't have to get a fix each time we wanted to see how the data is written.
 
+```python
+[x1, y1] = input("Enter coordinate 1: ").split(",")                 # Takes an input of 2 integers using the split method
+[x2, y2] = input("Enter coordinate 2: ").split(",")
+[x3, y3] = input("Enter coordinate 3: ").split(",")
+
+data = [[x1, y1], [x2, y2], [x3, y3]]                               # Arranges the data on a list
+
+with open("/testVars.txt", "a") as fp:                              # Opens a new text file on the pico titled "testVars"
+    for i in range(len(data)):                                      # Loops through the data
+        fp.write(f'{data[i][0]}, {data[i][1]}\n')                   # and writes each data point onto the file
+        fp.flush()
+        led.value = not led.value                                   # Turns the onboard led to the opposite state to test delay time of each write
+```
 ### Wiring 
 
 <img src="images/Project8.jpg" width="300" height="300" /> <img src="images/Project9.JPG" width="300" height="300" /> 
