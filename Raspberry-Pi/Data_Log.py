@@ -16,8 +16,9 @@ count = 0
 fixes = 0
 
 last_print = time.monotonic()
+with open("/gps.txt", "a") as fp:
 while True:
-    with open("/gps.txt", "a") as fp:
+
         gps.update()
         # Every second print out current location details if there's a fix.
         current = time.monotonic()
@@ -31,7 +32,7 @@ while True:
                 continue
             
             print(gps.latitude)
-            print(gps.longitude)
+            print(gps.longitude)    
 
             count = 0
             fixes += 1
