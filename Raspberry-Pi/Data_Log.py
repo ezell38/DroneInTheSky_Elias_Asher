@@ -31,7 +31,7 @@ while True:
                 print("Waiting for fix...")
                 time.sleep(.5)
                 continue
-            
+
             print(gps.latitude)
             print(gps.longitude)    
 
