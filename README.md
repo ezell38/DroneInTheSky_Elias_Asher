@@ -8,6 +8,7 @@
 * [Week 4-10](#Weeks_4-10)
 
 
+
 ## Planning
 
 ### Materials 
@@ -204,9 +205,17 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
         led.value = not led.value                                   # Turns the onboard led to the opposite state 
                                                                     # to test delay time of each write
 ```
-### Wiring 
+#### Datalog v 1.0
+
+
+##### Possible Issues
+
+* 
+
+### Initial Test Wiring 
 
 <img src="images/Project8.jpg" width="300" height="300" /> <img src="images/Project9.JPG" width="300" height="300" /> 
 
 <img src="images/Project10.jpg" width="300" height="300" /> <img src="images/Project11.JPG" width="300" height="300" /> 
+
 
