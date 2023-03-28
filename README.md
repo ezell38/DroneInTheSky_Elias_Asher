@@ -221,6 +221,6 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
 
 ### Final Soldering/Wiring 
 
-<img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.JPG" width="300" height="300" /> 
-<img src="images/project12.JPG" width="300" height="300" /> 
+<img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.jPG" width="300" height="300" /> 
+<img src="images/project12.jPG" width="300" height="300" /> 
 
