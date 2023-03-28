@@ -224,3 +224,9 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
 <img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.jpg" width="300" height="300" /> 
 <img src="images/project12.jpg" width="300" height="300" /> 
 
+### Final CAD with board
+
+<img src="images/Project15.JPG" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
+<img src="images/Project16.JPG" width="300" height="300" /> 
+
+
