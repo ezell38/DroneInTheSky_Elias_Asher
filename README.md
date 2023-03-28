@@ -219,3 +219,8 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
 <img src="images/Project10.jpg" width="300" height="300" /> <img src="images/Project11.JPG" width="300" height="300" /> 
 
 
+### Final Soldering/Wiring 
+
+<img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.JPG" width="300" height="300" /> 
+<img src="images/project12.JPG" width="300" height="300" /> 
+
