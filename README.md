@@ -205,12 +205,28 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
         led.value = not led.value                                   # Turns the onboard led to the opposite state 
                                                                     # to test delay time of each write
 ```
+Finally, we coded the device to collect actual gps data and save it onto a text file on the Pico. We did this by combining all of the above with the base data collection code given by the [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) website manual:
+
+```python
+with open("/gps2.txt", "a") as textFile: # Creates a txt file on the pico (adds to it if it already exists) called "gps2".
+    while True:
+        update = gps.update()    # Every second print out current location details if there's a fix.
+        if not gps.has_fix:      # Try again if we don't have a fix yet.
+            print("Waiting for fix...")
+            time.sleep(.5)
+            continue
+        else:
+            if update:   
+                textFile.write(f'{gps.latitude}, {gps.longitude}\n')   # Neatly formats the latitude and longitude and writes it onto the text file 
+                textFile.flush()  # Flushes the working memory of the device after the data is saved.
+
+```
 #### Datalog v 1.0
 
 
-##### Possible Issues
+##### Issues
 
-* 
+* Data was collected with repeating values, so if the system did not move, it collected the same latitude and longitude values.
 
 ### Initial Test Wiring 
 
