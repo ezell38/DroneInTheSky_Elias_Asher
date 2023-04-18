@@ -248,12 +248,26 @@ See [Version 1](Raspberry-Pi/DatalogV1.py) code for full working code...
 
 #### <ins>Version 2 (final code)</ins>
 
-In order to fix the issue, we added a couple lines that save the previous value as a variable, and checks to make sure the previous value does not equal the current. If so, it does not save the value, and waits until it gets a new one. 
+In order to fix the issue, we added a couple lines that save the previous value as a variable, and checks to make sure the previous value does not equal the current. If so, it does not save the value, and waits until it gets a new one:
 
 ```python
 
+if update and ((prev_lat != gps.latitude) or (prev_long != gps.longitude)):
+     textFile.write(f'{gps.latitude}, {gps.longitude}\n')
+     textFile.flush()     
+     
+     prev_lat = gps.latitude
+     prev_long = gps.longitude
+```
+There were a couple issues with this code, all very fixable:
+1. The each time prev_lat was set to a new value, it was not necessarily equal to the current value. This was because it collected a new instance of value of gps.latitude or gps.longitude (it reupdated when the function was called). The reason this was a problem was because it often ran through the loop again even if the position was exactly the same. The fix to this was to set gps.latitude and gps. longitude to their own new variables, and then match the previous latitude and longitude to those:
+
+```python
+*insert fix
 
 ```
+2. *Notation of not equals loop
+
 
 ### Initial Test Wiring 
 
