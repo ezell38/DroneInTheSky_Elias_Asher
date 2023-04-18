@@ -175,6 +175,8 @@ After we copy and pasted this starter code, we began to dissect it and remove th
 Next, we needed to figure out how to write data onto our pico, so that the drone could store the longitude and latitude values. The Raspberry Pi Pico can either read data or write data, and in write-only mode, the user is unable to edit any files on the pico. This turned out to be extremely annoying, as each time a problem occured in our code, we had to reboot the device into read-only mode, fix the problem, then reboot again into write-only.
 Instructions can be found [here.](https://learn.adafruit.com/cpu-temperature-logging-with-circuit-python/writing-to-the-filesystem) 
 
+##### Creating a boot file
+
 It took a while to figure out how to switch back and forth efficiently, but we managed to create a boot file that checks whether a wire is grounded. If it is, then the pico boots into write mode; if not, then it goes into read only mode.
 
 ```python
@@ -189,6 +191,17 @@ switch.pull = digitalio.Pull.UP
 if not switch.value:
     storage.remount("/", readonly=False)
 ```
+We saved this file as [boot.py](Raspberry-Pi/boot.py) on the pico. When the pico is restarted, it will automatically boot into this file. Now we won't have to use the terminal to switch between write and read mode each time, and can simply ground or unground the wire. 
+
+Note -  if you ever get stuck in read-only mode, use the terminal to rename the boot file from "boot.py" to "boot.bak"
+ 
+ Type the following three lines into the terminal, and then reboot the device:
+ import os
+ os.listdir("/")
+ os.rename("/boot.py", "/boot.bak")
+
+##### Data write test 
+
 After we were done setting up the switch wire, we were set to test the actual data collection. As a simple proof of concept, we created the following test file to see if the pico's data storage worked correctly. This file could also be used as a tool to mess with the formatting of the data before it's written, so that we didn't have to get a fix each time we wanted to see how the data is written.
 
 ```python
@@ -205,6 +218,9 @@ with open("/testVars.txt", "a") as fp:                              # Opens a ne
         led.value = not led.value                                   # Turns the onboard led to the opposite state 
                                                                     # to test delay time of each write
 ```
+
+#### Datalog v 1.0
+
 Finally, we coded the device to collect actual gps data and save it onto a text file on the Pico. We did this by combining all of the above with the base data collection code given by the [Ultimate GPS](https://learn.adafruit.com/adafruit-ultimate-gps/circuitpython-python-uart-usage) website manual:
 
 ```python
@@ -221,12 +237,16 @@ with open("/gps2.txt", "a") as textFile: # Creates a txt file on the pico (adds 
                 textFile.flush()  # Flushes the working memory of the device after the data is saved.
 
 ```
-#### Datalog v 1.0
+See [Version 1](Raspberry-Pi/DatalogV1.py) code for full working code...
 
 
 ##### Issues
 
 * Data was collected with repeating values, so if the system did not move, it collected the same latitude and longitude values.
+
+#### Version 2 (final code)
+
+In order to fix the issue
 
 ### Initial Test Wiring 
 
