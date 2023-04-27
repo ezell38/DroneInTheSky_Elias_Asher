@@ -294,4 +294,7 @@ The second test, we walked the perimeter of the baseball field and collected muc
 <img src="images/Project15.jpg" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
 <img src="images/Project16.jpg" width="300" height="300" /> 
 
+### Data Mapping
+
+<img src="images/Project20.PNG" width="400" height="300" /> <img src="images/Project21.PNG" width="400" height="300" /> 
 
