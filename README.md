@@ -269,6 +269,14 @@ There were a couple issues with this code, all very fixable:
 2. *Notation of not equals loop
 
 
+After fixing these problems, we collected 2 different sets of data, without sequential duplicate position values:
+
+The first of which was less accurate, with many data points clustered together
+* newtest2
+
+
+The second test, we walked the perimeter of the baseball field and collected much more accurate data, without high spread from our real path.
+
 ### Initial Test Wiring 
 
 <img src="images/Project8.jpg" width="300" height="300" /> <img src="images/Project9.JPG" width="300" height="300" /> 
