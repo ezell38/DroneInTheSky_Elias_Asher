@@ -328,6 +328,7 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
                 
 ```
 
+
 ### Initial Test Wiring 
 
 <img src="images/Project8.jpg" width="300" height="300" /> <img src="images/Project9.JPG" width="300" height="300" /> 
@@ -347,7 +348,7 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
 
 ### Data Mapping
 
-After finalizing the code and being able to collect data without repeats, the next step is to map those points to decipher how accurate the data is, as well as get physical representation. To do this we choose to use Google Earth Pro because it allows you to upload a text file and then map the coordinates listed in the file. To test the accuracy of our data we walked a lap around the baseball field, hugging to the fence, to have a reference point for the data. We then mapped it and the results are below. 
+After finalizing the code and being able to collect data without repeats, the next step is to map those points to decipher how accurate the data is, as well as get physical representation. To do this we choose to use Google Earth Pro because it allows you to upload a text file and then map the coordinates listed in the file. To test the accuracy of our data, we walked a lap around the baseball field, hugging to the fence, to have a reference point for the data. We then mapped it and the results are below. 
 
 <img src="images/Project20.PNG" width="400" height="300" /> <img src="images/Project21.PNG" width="400" height="300" /> 
 
