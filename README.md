@@ -268,14 +268,11 @@ There were a couple issues with this code, all very fixable:
 ```
 2. *Notation of not equals loop
 
+This is the final code - 
 
-After fixing these problems, we collected 2 different sets of data, without sequential duplicate position values:
+```python
 
-The first of which was less accurate, with many data points clustered together
-* newtest2
-
-
-The second test, we walked the perimeter of the baseball field and collected much more accurate data, without high spread from our real path.
+```
 
 ### Initial Test Wiring 
 
@@ -295,6 +292,8 @@ The second test, we walked the perimeter of the baseball field and collected muc
 <img src="images/Project16.jpg" width="300" height="300" /> 
 
 ### Data Mapping
+
+After finalizing the code and being able to collect data without repeats, the next step is to map those points to decipher how accurate the data is, as well as get physical representation. To do this we choose to use Google Earth Pro because it allows you to upload a text file and then map the coordinates listed in the file. To test the accuracy of our data we walked a lap around the baseball field, hugging to the fence, to have a reference point for the data. We then mapped it and the results are below. 
 
 <img src="images/Project20.PNG" width="400" height="300" /> <img src="images/Project21.PNG" width="400" height="300" /> 
 
