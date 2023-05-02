@@ -81,6 +81,7 @@ We will wear safety glasses while flying the drone and doing other various tasks
 ## Schedule
 
 ### Initial Schedule
+
 Weeks 1 and 2: We will complete the planning document besides code and cad sketches, schedule, and get permission. </br>
 Week 3: We will complete pseudocode and CAD sketches of each part, and purchase/collect supplies. </br>
 Weeks 4 and 5: We will start drafting the real code and CAD for printing, as well as wiring. </br>
@@ -93,6 +94,7 @@ Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
 
 ### Updated Schedule (1/27)
+
 Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding. </br>  
 Week 5(2/6): Coding. </br>
 Week 6(2/13): Coding. </br>
