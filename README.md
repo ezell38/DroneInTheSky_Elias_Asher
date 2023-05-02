@@ -260,15 +260,9 @@ if update and ((prev_lat != gps.latitude) or (prev_long != gps.longitude)):
      prev_long = gps.longitude
 ```
 There were a couple issues with this code, all very fixable:
-1. The each time prev_lat was set to a new value, it was not necessarily equal to the current value. This was because it collected a new instance of value of gps.latitude or gps.longitude (it reupdated when the function was called). The reason this was a problem was because it often ran through the loop again even if the position was exactly the same. The fix to this was to set gps.latitude and gps. longitude to their own new variables, and then match the previous latitude and longitude to those:
+1. The each time prev_lat was set to a new value, it was not necessarily equal to the current value. This was because it collected a new instance of value of gps.latitude or gps.longitude (it reupdated when the function was called). The reason this was a problem was because it often ran through the loop again even if the position was exactly the same. 
 
-```python
-*insert fix
-
-```
-2. *Notation of not equals loop
-
-Here is the final code - 
+The fix to this was to set gps.latitude and gps.longitude to their own new variables, and then set the previous latitude and longitude to those, to force the loop to only run if a new value is collected and saved to the "latitude" and "longitude" variables. Here is the final code, solving the beforementioned problems:
 
 ```python
 import time
@@ -294,10 +288,8 @@ gps.send_command(b"PMTK220,500")
 with open("/NEWWORKTEST2.txt", "a") as textFile:
     while True:
         update = gps.update()
-        # Every second print out current location details if there's a fix.
 
         if not gps.has_fix:
-            # Try again if we don't have a fix yet.
             print("Waiting for fix...")
             time.sleep(.5)
             continue
@@ -306,7 +298,7 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
             latitude = round(float(gps.latitude), 4)
             longitude = round(float(gps.longitude), 4)
 
-            if update and not ((prev_lat == latitude) and (prev_long == longitude)):
+            if update and not ((prev_lat == latitude) and (prev_long == longitude)): # Phrasing was changed for this conditional
 
                 print(latitude)
                 print(longitude)
