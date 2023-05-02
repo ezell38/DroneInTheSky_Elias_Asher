@@ -7,7 +7,7 @@
 * [Schedule](#Schedule)
 * [CAD](#CAD)
 * [Code](#Code)
-* [Drone Mapping](#Drone Mapping)
+* [Drone Mapping](#Drone_Mapping)
 
 
 
@@ -341,7 +341,7 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
 <img src="images/Project15.jpg" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
 <img src="images/Project16.jpg" width="300" height="300" /> 
 
-## Drone Mapping
+## Drone_Mapping
 
 After collecting a list of latitudes and longitudes we could then test the accuracy of the data using Google Earth Pro. GEP allows you to upload a text file and then maps the list of coordinates. The first test map we made was using a list with repeats and the data was not super accurate. 
 
