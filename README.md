@@ -352,5 +352,5 @@ After collecting a list of latitudes and longitudes we could then test the accur
 
 After finalizing the code and being able to collect data without repeats, the next step is to map those points to decipher how accurate the data is. To do this,we walked a lap around the baseball field, right on the exterior fence, to have a reference point for the data. We then mapped it and the results are below. It had much less of a spread from the path than the previous map.
 
-<img src="images/Project20.PNG" width="400" height="450" /> 
+<img src="images/Project20.PNG" width="400" height="400" /> 
 
