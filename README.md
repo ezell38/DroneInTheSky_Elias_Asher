@@ -4,8 +4,10 @@
 
 ## Table of Contents
 * [Planning](#Planning)
-* [Week 1-4](#Weeks_1-4)
-* [Week 4-10](#Weeks_4-10)
+* [Schedule](#Schedule)
+* [CAD](#CAD)
+* [Code](#Code)
+* [Drone Mapping](#Drone Mapping)
 
 
 
@@ -75,8 +77,9 @@ We will wear safety glasses while flying the drone and doing other various tasks
  - How to map out a path on the screen from data
  
 
-### Schedule
+## Schedule
 
+### Initial Schedule
 Weeks 1 and 2: We will complete the planning document besides code and cad sketches, schedule, and get permission. </br>
 Week 3: We will complete pseudocode and CAD sketches of each part, and purchase/collect supplies. </br>
 Weeks 4 and 5: We will start drafting the real code and CAD for printing, as well as wiring. </br>
@@ -88,8 +91,47 @@ Week 11: Retest with new changes. </br>
 Week 12: Implement new functions and test. </br>
 Week 13 and 14: Finalize documentation and design.
 
+### Updated Schedule (1/27)
+Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding. </br>  
+Week 5(2/6): Coding. </br>
+Week 6(2/13): Coding. </br>
+Week 7(2/20): Test finalized code with bread board. </br>
+Week 8(2/27): Solder the board with finalized components and assemble with attachment. </br> 
+Week 9(3/3): Combine all components into full project for testing. </br>
+Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
 
-## Weeks_1-4
+
+## CAD 
+
+### Initial CAD
+
+For this assignment we needed to attach the GPS tracker onto a tello drone so we are able to attach it. We used a previous CAD design that was meant to hold an egg over a tello and then remodeled it to hold the circuitboard, Rasberry Pi PICO, battery, and Adafruit Ultimate GPS. A major object in this project was keeping the total mass of the required modules as well as the printed CAD attachment under the tello weight restriction of 60 grams. We ended up acheiving this by cutting slits in the CAD design to cut down the weight. 
+
+<img src="images/Project_1.PNG" width="400" height="300" />
+
+<img src="images/Project_2.PNG" width="400" height="300" /> 
+
+<img src="images/Project_3.PNG" width="400" height="300" /> 
+
+
+[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/5392185db1c275d61a384980)
+
+### Finalized CAD 
+
+One major change we made in our CAD design was adding slits in the battery holder to save weight and also editing the dimensions for a more snug fit. We also added a nut shaped extrude in the bottom of the attachment to hold the nut alling the bolt to screw in because the bolt was not long enough to reach all the way through. 
+
+<img src="images/Project_4.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_5.PNG" width="400" height="300" /> 
+
+
+<img src="images/Project_6.PNG" width="400" height="300" /> 
+
+
+[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
+
+## Code 
 
 During these weeks we completed the planning document and slowly finalized/revised our project until we decided on what our first, reasonable iteration would be. We then completed the PseudoCode and CAD design for the project.
 
@@ -111,50 +153,11 @@ During these weeks we completed the planning document and slowly finalized/revis
 
  - Print data 
 
-### CAD 
-
-For this assignment we needed to attach the GPS tracker onto a tello drone so we are able to attach it. We used a previous CAD design that was meant to hold an egg over a tello and then remodeled it to hold the circuitboard, Rasberry Pi PICO, battery, and Adafruit Ultimate GPS. A major object in this project was keeping the total mass of the required modules as well as the printed CAD attachment under the tello weight restriction of 60 grams. We ended up acheiving this by cutting slits in the CAD design to cut down the weight. 
-
-<img src="images/Project_1.PNG" width="400" height="300" />
-
-<img src="images/Project_2.PNG" width="400" height="300" /> 
-
-<img src="images/Project_3.PNG" width="400" height="300" /> 
 
 
-[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/5392185db1c275d61a384980)
-
-### Code 
+### First version 
 
 [Initial Code](Raspberry-Pi/Code_1.py)
-
-
-## Weeks_4-10 
-
-### Schedule
-
-Week 4(1/30): Finish and print finalized CAD design then assemble. Start Coding. </br>  
-Week 5(2/6): Coding. </br>
-Week 6(2/13): Coding. </br>
-Week 7(2/20): Test finalized code with bread board. </br>
-Week 8(2/27): Solder the board with finalized components and assemble with attachment. </br> 
-Week 9(3/3): Combine all components into full project for testing. </br>
-Week 10(3/10): First Prototype test of flight with all components. Logging location. </br>
-
-### Finalized CAD 
-
-One major change we made in our CAD design was adding slits in the battery holder to save weight and also editing the dimensions for a more snug fit. We also added a nut shaped extrude in the bottom of the attachment to hold the nut alling the bolt to screw in because the bolt was not long enough to reach all the way through. 
-
-<img src="images/Project_4.PNG" width="400" height="300" /> 
-
-
-<img src="images/Project_5.PNG" width="400" height="300" /> 
-
-
-<img src="images/Project_6.PNG" width="400" height="300" /> 
-
-
-[CAD Link](https://cvilleschools.onshape.com/documents/748b0624d922708572d6db59/w/4d4ce83156b394ee96ab4f9d/e/7e351361971f75975efdfd49)
 
 ### Code explained
 
@@ -175,7 +178,7 @@ After we copy and pasted this starter code, we began to dissect it and remove th
 Next, we needed to figure out how to write data onto our pico, so that the drone could store the longitude and latitude values. The Raspberry Pi Pico can either read data or write data, and in write-only mode, the user is unable to edit any files on the pico. This turned out to be extremely annoying, as each time a problem occured in our code, we had to reboot the device into read-only mode, fix the problem, then reboot again into write-only.
 Instructions can be found [here.](https://learn.adafruit.com/cpu-temperature-logging-with-circuit-python/writing-to-the-filesystem) 
 
-##### <ins>Creating a boot file</ins>
+#### <ins>Creating a boot file</ins>
 
 It took a while to figure out how to switch back and forth efficiently, but we managed to create a boot file that checks whether a wire is grounded. If it is, then the pico boots into write mode; if not, then it goes into read only mode.
 
@@ -333,12 +336,12 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
 <img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.jpg" width="300" height="300" /> 
 <img src="images/project12.jpg" width="300" height="300" /> 
 
-### Final CAD with board
+### Final Assembly
 
 <img src="images/Project15.jpg" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
 <img src="images/Project16.jpg" width="300" height="300" /> 
 
-### Data Mapping
+## Drone Mapping
 
 After collecting a list of latitudes and longitudes we could then test the accuracy of the data using Google Earth Pro. GEP allows you to upload a text file and then maps the list of coordinates. The first test map we made was using a list with repeats and the data was not super accurate. 
 
