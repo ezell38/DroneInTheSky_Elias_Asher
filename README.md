@@ -7,6 +7,7 @@
 * [Schedule](#Schedule)
 * [CAD](#CAD)
 * [Code](#Code)
+* [Final Assembly](#Final_Assembly)
 * [Drone Mapping](#Drone_Mapping)
 
 
@@ -331,12 +332,12 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
 <img src="images/Project10.jpg" width="300" height="300" /> <img src="images/Project11.JPG" width="300" height="300" /> 
 
 
-### Final Soldering/Wiring 
+### Soldered CircuitBoard
 
 <img src="images/project10.jpg" width="300" height="300" /> <img src="images/project11.jpg" width="300" height="300" /> 
 <img src="images/project12.jpg" width="300" height="300" /> 
 
-### Final Assembly
+## Final_Assembly
 
 <img src="images/Project15.jpg" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
 <img src="images/Project16.jpg" width="300" height="300" /> 
