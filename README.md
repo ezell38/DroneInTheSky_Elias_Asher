@@ -8,7 +8,7 @@
 * [CAD](#CAD)
 * [Code](#Code)
 * [Final Assembly](#Final_Assembly)
-* [Drone Mapping](#Drone_Mapping)
+* [Data Mapped](#Data_Mapped)
 * [Launch](#Launch)
 
 
@@ -345,20 +345,23 @@ with open("/NEWWORKTEST2.txt", "a") as textFile:
 <img src="images/Project15.jpg" width="300" height="300" /> <img src="images/Project17.jpg" width="300" height="300" /> 
 <img src="images/Project16.jpg" width="300" height="300" /> 
 
-## Drone_Mapping
+## Data_Mapped
 
 After collecting a list of latitudes and longitudes we could then test the accuracy of the data using Google Earth Pro. GEP allows you to upload a text file and then maps the list of coordinates. The first test map we made was using a list with repeats and the data was not super accurate. 
 
 <img src="images/Project21.PNG" width="400" height="300" /> 
 
-After finalizing the code and being able to collect data without repeats, the next step is to map those points to decipher how accurate the data is. To do this,we walked a lap around the baseball field, right on the exterior fence, to have a reference point for the data. We then mapped it and the results are below. It had much less of a spread from the path than the previous map.
+------------------------------------------------------------------
+
+After finalizing the code and being able to collect data without repeats, we mapped those points to decipher how accurate the data was. To do this, we walked a lap around the exterior fence of the baseball field to have a reference point for the data. We then mapped it (results are below). It had much less of a spread from the path than the previous attempt.
 
 <img src="images/Project20.PNG" width="400" height="400" /> 
 
 ## Launch 
 
+Lastly, it was time to test the data collection while flying the drone. We flew a simple path and collected location points in the same way (map shown below).
 
-<img src="images/Project22.PNG" width="400" height="400" /> 
+<img src="images/Project22.PNG" width="400" height="400" /> <img src="images/Drone_Gif (2).gif" width="400" height="400" />
 
 
 ## Iteration 2
