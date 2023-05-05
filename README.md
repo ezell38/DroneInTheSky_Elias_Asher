@@ -357,11 +357,16 @@ After finalizing the code and being able to collect data without repeats, we map
 
 <img src="images/Project20.PNG" width="400" height="400" /> 
 
-## Launch 
+### Launch 
 
 Lastly, it was time to test the data collection while flying the drone. We flew a simple path and collected location points in the same way (map shown below).
 
 <img src="images/Project22.PNG" width="400" height="400" /> <img src="images/Drone_Gif (2).gif" width="500" height="400" />
+
+## Reflection
+
+- By the end of the project, we had narrowed our scope significantly from what we had planned at the beginning. We originally had decided to have an infrared remote to interact with the pico from the ground, but we did not implement that idea at all in our first iteration. 
+- 
 
 
 ## Iteration 2
