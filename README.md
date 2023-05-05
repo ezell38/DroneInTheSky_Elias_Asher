@@ -361,7 +361,7 @@ After finalizing the code and being able to collect data without repeats, we map
 
 Lastly, it was time to test the data collection while flying the drone. We flew a simple path and collected location points in the same way (map shown below).
 
-<img src="images/Project22.PNG" width="400" height="400" /> <img src="images/Drone_Gif (2).gif" width="400" height="400" />
+<img src="images/Project22.PNG" width="400" height="400" /> <img src="images/Drone_Gif (2).gif" width="500" height="400" />
 
 
 ## Iteration 2
