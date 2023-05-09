@@ -371,3 +371,6 @@ Lastly, it was time to test the data collection while flying the drone. We flew 
 
 ## Iteration 2
 
+For the second iteration of our project, we planned to design a foam glider with the pico slotted in the center front. Weights will be used in the back to counterbalance.
+
+<img src="images/Glider_firstDesign.jpg" width="400" height="300" />
