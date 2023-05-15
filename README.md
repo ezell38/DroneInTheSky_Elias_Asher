@@ -365,8 +365,9 @@ Lastly, it was time to test the data collection while flying the drone. We flew 
 
 ## Reflection
 
-- By the end of the project, we had narrowed our scope significantly from what we had planned at the beginning. We originally had decided to have an infrared remote to interact with the pico from the ground, but we did not implement that idea at all in our first iteration. 
-- 
+- By the end of the project, we had narrowed our scope significantly from what we had planned at the beginning. We originally had decided to have an infrared remote to interact with the pico from the ground, but we did not implement that idea at all in our first iteration. We also were planning on implimenting a live tracking function into our design that would allow you to see where the device was in real time but do to lack of capability we did not complete that either. 
+- Over the course of this project we learned a lot about CAD and Code. In terms of CAD, one major thing we learned was how to import an outside design into onshape and then modify it for our project. For example, we took a device that was meant to hold an egg on top of a tello and modified it to hold our Pico and other devices. For code, we learned that little problems can take hours and hours to solve if you don't look at it in the right way. Sometimes stepping back and looking at it with a fresh mind can clear things up and allow you to solve the problem.  
+- We learned a lot about perserverence and sustained hard work through this project. The majority of it was trying to get the code to do one function and it took months of uploading new code, going outside to get a fix, and then seeing what went wrong before the code finally worked. Although this took a really long time and was very taxing, we finally figured it out and it was very rewarding. This taught us a lot about keeping going without seeing physical progress.
 
 
 ## Iteration 2
